@@ -3,21 +3,20 @@ Bài 7: Phân tích và khắc phục lỗi điều hướng thư mục trên Te
 PHẦN 1: PHÂN TÍCH VẤN ĐỀ
 ----------------------------------------------------------------
 - Nguyên nhân gây lỗi: 
-  Tên thư mục "Menu Thang 9" chứa khoảng trắng (space)[cite: 1]. 
-  Khi gõ `cd Menu Thang 9`[cite: 1], Terminal/PowerShell hiểu khoảng trắng là ký tự phân tách đối số, 
+  Tên thư mục "Menu Thang 9" chứa khoảng trắng (space). 
+  Khi gõ `cd Menu Thang 9`, Terminal/PowerShell hiểu khoảng trắng là ký tự phân tách đối số, 
 do đó chỉ nhận "Menu" làm tham số đường dẫn và xem "Thang", "9" là các tham số phụ. Vì không tìm thấy 
-thư mục tên "Menu" phù hợp nên hệ thống báo lỗi `Cannot find path`[cite: 1].
+thư mục tên "Menu" phù hợp nên hệ thống báo lỗi `Cannot find path`.
 
 PHẦN 2: HOÀN THIỆN BÀI (2 CÁCH VIẾT LỆNH CD ĐÚNG)
 ----------------------------------------------------------------
-- Cách 1: Đặt tên thư mục bên trong dấu ngoặc kép " " (hoặc ngoặc đơn ' ')[cite: 1]
+- Cách 1: Đặt tên thư mục bên trong dấu ngoặc kép " " (hoặc ngoặc đơn ' ')
   Lệnh thực thi: 
   cd "Menu Thang 9"
 
-- Cách 2: Sử dụng ký tự thoát (Escape character) trước khoảng trắng hoặc gõ tên đầu rồi bấm phím TAB[cite: 1]
+- Cách 2: Sử dụng ký tự thoát (Escape character) trước khoảng trắng hoặc gõ tên đầu rồi bấm phím TAB
   Lệnh thực thi (Linux / macOS / Git Bash):
   cd Menu\ Thang\ 9
 
   Lệnh thực thi (Windows PowerShell):
   cd Menu` Thang` 9   (hoặc: cd '.\Menu Thang 9\')
-
